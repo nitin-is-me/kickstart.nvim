@@ -90,16 +90,6 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Use 2 spaces for shiftwidth in javascript and typescript
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-  callback = function()
-    vim.opt_local.tabstop = 2
-    vim.opt_local.shiftwidth = 2
-    vim.opt_local.expandtab = true
-  end,
-})
-
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
