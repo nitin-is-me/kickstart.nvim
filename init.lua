@@ -84,6 +84,12 @@ I hope you enjoy your Neovim journey,
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
 
+-- Set global default indentation (fixes indentation issues with js, ts, css files)
+vim.opt.tabstop = 2        -- Display width of a tab character
+vim.opt.shiftwidth = 2     -- Width of an indent
+vim.opt.expandtab = true   -- Use spaces instead of tabs
+vim.opt.softtabstop = 2    -- Number of spaces a tab counts for when editing
+
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
