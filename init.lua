@@ -265,7 +265,7 @@ require('lazy').setup({
   'akinsho/toggleterm.nvim',
   version = "*",
   opts = {
-    size = 15, -- You can adjust the height of the horizontal terminal
+    size = 10, -- You can adjust the height of the horizontal terminal
     open_mapping = [[<c-t>]],
     hide_numbers = true,
     shade_filetypes = {},
@@ -861,7 +861,7 @@ require('lazy').setup({
         -- <c-k>: Toggle signature help
         --
         -- See :h blink-cmp-config-keymap for defining your own keymap
-        preset = 'default',
+        preset = 'enter', -- 'default' didn't suit me
 
         -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
