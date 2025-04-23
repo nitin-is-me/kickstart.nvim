@@ -260,6 +260,27 @@ require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
+    -- Terminal integration with toggleterm
+{
+  'akinsho/toggleterm.nvim',
+  version = "*",
+  opts = {
+    size = 15, -- You can adjust the height of the horizontal terminal
+    open_mapping = [[<c-t>]],
+    hide_numbers = true,
+    shade_filetypes = {},
+    shade_terminals = true,
+    shading_factor = 2,
+    start_in_insert = true,
+    insert_mappings = true,
+    persist_size = true,
+    direction = "horizontal", -- Change from "float" to "horizontal"
+    close_on_exit = true,
+    shell = vim.o.shell,
+    -- You can remove the float_opts since they won't apply to horizontal mode
+  }
+},
+    
   -- To auto-close brackets
   {
     'windwp/nvim-autopairs',
