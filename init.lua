@@ -970,7 +970,7 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'javascript', 'typescript', 'tsx', 'css', 'html', },
+      ensure_installed = { 'javascript', 'typescript', 'tsx', 'css', 'html', 'lua' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
